@@ -6,6 +6,7 @@
 
 body {
     color: white;
+    overflow-X: hidden;
 }
 
 
@@ -309,6 +310,28 @@ body {
 
 
 
+@media(max-width: 1024px) {
+    .about {
+        .about__card {
+            .card__description {
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: .7rem;
+                }
+            }
+
+            .card__img-container {
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
 
 @media(max-width: 800px) {
     .main {
@@ -338,6 +361,49 @@ body {
                 }
             }
 
+        }
+    }
+}
+
+@media(max-width: 736px) and (orientation: landscape) {
+    .main {
+        h1 {
+            top: 25%;
+        }
+    }
+
+    .about {
+        .about__header {
+            font-size: 2rem;
+            top: 2%;
+            right: 2%;
+        }
+
+        .about__card {
+
+
+            .card__img-container {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            button {
+                width: 80px;
+                height: 20px;
+                font-size: .6rem;
+            }
+
+            .card__description {
+                h3 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: .5rem;
+                }
+            }
         }
     }
 }

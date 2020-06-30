@@ -7,6 +7,7 @@
 
 body {
   color: white;
+  overflow-X: hidden;
 }
 
 .main {
@@ -313,6 +314,19 @@ body {
   right: 0;
 }
 
+@media (max-width: 1024px) {
+  .about .about__card .card__description h3 {
+    font-size: 1.5rem;
+  }
+  .about .about__card .card__description p {
+    font-size: .7rem;
+  }
+  .about .about__card .card__img-container img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 @media (max-width: 800px) {
   .main h1 {
     font-size: 5rem;
@@ -329,6 +343,32 @@ body {
   .about .about__card .card__img-container img {
     width: 200px;
     height: 200px;
+  }
+}
+
+@media (max-width: 736px) and (orientation: landscape) {
+  .main h1 {
+    top: 25%;
+  }
+  .about .about__header {
+    font-size: 2rem;
+    top: 2%;
+    right: 2%;
+  }
+  .about .about__card .card__img-container img {
+    width: 100px;
+    height: 100px;
+  }
+  .about .about__card button {
+    width: 80px;
+    height: 20px;
+    font-size: .6rem;
+  }
+  .about .about__card .card__description h3 {
+    font-size: 1rem;
+  }
+  .about .about__card .card__description p {
+    font-size: .5rem;
   }
 }
 
