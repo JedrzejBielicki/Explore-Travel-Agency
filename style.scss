@@ -416,3 +416,11 @@ body {
         }
     }
 }
+
+@media(max-width: 361px) {
+    .main {
+        h2 {
+            font-size: 1rem;
+        }
+    }
+}
