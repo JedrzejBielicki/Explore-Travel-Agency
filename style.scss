@@ -300,6 +300,38 @@ body {
 
 }
 
+@media(max-width: 800px) {
+    .main {
+        h1 {
+            font-size: 5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .about {
+        .about__card {
+            width: 100%;
+
+            .card__description {
+                p {
+                    width: 90%;
+                }
+            }
+
+            .card__img-container {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+        }
+    }
+}
+
 @media(max-width: 440px) {
     .main {
         h1 {
@@ -318,6 +350,58 @@ body {
             .main__circle--small {
                 height: 25vh;
                 width: 25vh;
+            }
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        .main__social {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            left: 0;
+
+            a {
+                padding: 0;
+            }
+        }
+    }
+
+    .about {
+        .about__header {
+            font-size: 1.5rem;
+            top: 2vh;
+            right: 2vh;
+        }
+
+        .about__card {
+            width: 100%;
+
+            .card__img-container {
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+
+            .card__description {
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: .6rem;
+                    width: 95%;
+                    font-weight: normal;
+                }
+
+                button {
+                    width: 100px;
+                    height: 30px;
+                }
             }
         }
     }
