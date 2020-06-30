@@ -223,82 +223,92 @@ body {
         display: flex;
         margin: 0 auto;
         position: relative;
+    }
 
-        .card__img-container {
+    .card__img-container {
 
-            width: 40%;
-            position: relative;
+        width: 40%;
+        position: relative;
 
-            img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 70%;
-                height: 70%;
-                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-                border-radius: 5%;
-            }
-        }
-
-        .card__description {
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
             height: 70%;
-            width: 100%;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 5%;
+        }
+    }
+
+    .card__description {
+        height: 70%;
+        width: 100%;
+        margin: auto 0;
+        position: relative;
+
+        h3 {
+            font-size: 2rem;
+            font-family: 'Lobster', cursive;
+            font-weight: normal;
+
+        }
+
+        p {
+            width: 50%;
             margin: auto 0;
-            position: relative;
+            font-weight: bold;
+            font-size: 0.9rem;
+            position: absolute;
+            top: 50%;
 
-            h3 {
-                font-size: 2rem;
-                font-family: 'Lobster', cursive;
-                font-weight: normal;
+            transform: translateY(-50%);
 
-            }
-
-            p {
-                width: 50%;
-                margin: auto 0;
-                font-weight: bold;
-                font-size: 0.9rem;
-                position: absolute;
-                top: 50%;
-
-                transform: translateY(-50%);
-
-            }
-
-            button {
-                bottom: 0;
-                position: absolute;
-                width: 150px;
-                height: 42px;
-                border-radius: 50px 50px 50px 50px;
-                border: 1px solid white;
-                font-family: 'lobster', cursive;
-                background-color: #5E8197;
-                color: white;
-                font-size: 1.1rem;
-            }
-        }
-    }
-
-    .about__card:nth-of-type(2) {
-        flex-direction: row-reverse;
-        text-align: end;
-
-        .card__description {
-            button {
-                right: 0;
-            }
-
-            p {
-                right: 0;
-            }
         }
 
-    }
+        button {
+            bottom: 0;
+            position: absolute;
+            width: 150px;
+            height: 42px;
+            border-radius: 50px 50px 50px 50px;
+            border: 1px solid white;
+            font-family: 'lobster', cursive;
+            background-color: #5E8197;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: .5s;
+        }
 
+        button:hover {
+            color: #528197;
+            background-color: #fff;
+            border: 1px solid #528197;
+        }
+    }
+}
+
+.about__card:nth-of-type(2) {
+    flex-direction: row-reverse;
+    text-align: end;
+
+    .card__description {
+        button {
+            right: 0;
+        }
+
+        p {
+            right: 0;
+        }
+    }
 
 }
+
+
+
+
 
 @media(max-width: 800px) {
     .main {
