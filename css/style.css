@@ -12,14 +12,14 @@ body {
 
 .main {
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   font-family: 'Montserrat', sans-serif;
   overflow: hidden;
 }
 
 .main .main__bg1 {
   position: absolute;
-  bottom: 0;
+  top: 0;
   width: 100%;
   height: 100vh;
   background-image: url(/imgs/mountain2_optimized.png);
@@ -37,7 +37,7 @@ body {
   background-size: cover;
   background-position: center;
   position: absolute;
-  bottom: 1px;
+  top: 0;
   z-index: -2;
   padding: 0;
   margin: 0;
@@ -50,7 +50,7 @@ body {
   background-size: cover;
   background-position: center;
   position: absolute;
-  bottom: 2px;
+  top: 0;
   z-index: -1;
   padding: 0;
   margin: 0;
@@ -63,7 +63,7 @@ body {
   background-size: cover;
   background-position: center;
   position: absolute;
-  bottom: 1px;
+  top: 0;
   z-index: -1;
   padding: 0;
   margin: 0;
