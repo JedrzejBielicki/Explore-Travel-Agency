@@ -164,7 +164,7 @@ body {
 .about {
   overflow: hidden;
   height: 100vh;
-  z-index: 2;
+  z-index: 5;
   background-color: #5E8197;
   position: relative;
   display: -webkit-box;
@@ -430,6 +430,9 @@ body {
 }
 
 @media (max-width: 361px) {
+  .main h1 {
+    font-size: 1.5rem;
+  }
   .main h2 {
     font-size: 1rem;
   }
