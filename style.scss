@@ -172,11 +172,19 @@ body {
         cursor: pointer;
         background: none;
         border: none;
+        transition: .5s;
+
 
         img {
             width: 100%;
             height: 100%;
         }
+    }
+
+    button:hover {
+        height: 6vh;
+        width: 6vh;
+
     }
 }
 
